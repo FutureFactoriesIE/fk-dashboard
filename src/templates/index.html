@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>FK Dashboard</title>
+        <link rel="stylesheet" href="./static/style.css">
+        <script type="text/javascript" src="./static/index.js"></script>
+    </head>
+    <body onload="on_page_load();">
+        <main>
+
+            <div id="main_layout">
+
+                <div>
+                    <h1 class="plot_title">R01</h1>
+                    <img class="plot_image" id="r01_plot" src="" />
+                    <form>
+                        <input class="toggle_button" id="r01_t_active" type="button" value="Toggle active">
+                        <input class="toggle_button" id="r01_t_history" type="button" value="Toggle tool history">
+                        <input class="toggle_button" id="r01_t_coords" type="button" value="Toggle tool coords">
+                        <input class="toggle_button" id="r01_t_axis" type="button" value="Toggle axis lines">
+                    </form>
+                    <p id="r01_data"></p>
+                </div>
+
+                <div>
+                    <h1 class="plot_title">R02</h1>
+                    <img class="plot_image" id="r02_plot" src="" />
+                    <form>
+                        <input class="toggle_button" id="r02_t_active" type="button" value="Toggle active">
+                        <input class="toggle_button" id="r02_t_history" type="button" value="Toggle tool history">
+                        <input class="toggle_button" id="r02_t_coords" type="button" value="Toggle tool coords">
+                        <input class="toggle_button" id="r02_t_axis" type="button" value="Toggle axis lines">
+                    </form>
+                    <p id="r02_data"></p>
+                </div>
+
+                <div>
+                    <h1 class="plot_title">R03</h1>
+                    <img class="plot_image" id="r03_plot" src="" />
+                    <form>
+                        <input class="toggle_button" id="r03_t_active" type="button" value="Toggle active">
+                        <input class="toggle_button" id="r03_t_history" type="button" value="Toggle tool history">
+                        <input class="toggle_button" id="r03_t_coords" type="button" value="Toggle tool coords">
+                        <input class="toggle_button" id="r03_t_axis" type="button" value="Toggle axis lines">
+                    </form>
+                    <p id="r03_data"></p>
+                </div>
+
+            </div>
+
+        </main>
+        <input type="button" id="update_interval_button" value="100ms">
+        <!-- secret party mode button/logo -->
+        <img src="./static/logo.png" id="logo" onclick="handle_onclick(event);"/>
+    </body>
+</html>

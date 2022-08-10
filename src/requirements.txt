@@ -1,0 +1,5 @@
+Flask
+Pillow
+matplotlib
+numpy
+paho-mqtt

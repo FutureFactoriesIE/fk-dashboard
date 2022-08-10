@@ -1,0 +1,21 @@
+version: "2.4"
+services:
+    fk-dashboard:
+        image: fk-dashboard:latest
+        mem_limit: 300mb
+        restart: "unless-stopped"
+        volumes:
+            - './publish/:/publish/'
+            - './cfg-data/:/cfg-data/'
+        networks:
+            - proxy-redirect
+        logging: 
+          driver: "json-file"
+          options: 
+            max-size: "10m"
+            max-file: "3"
+
+networks:
+    proxy-redirect:
+        external:
+            name: proxy-redirect
